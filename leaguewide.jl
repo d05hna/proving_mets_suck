@@ -41,7 +41,7 @@ set_theme!(theme)
 ##
 d4this = grouped_df[grouped_df.total .> 25, :]
 
-fig = Figure(figsize=(10,10))
+fig = Figure(figsize=(5,5))
 ax = Axis(fig[1, 1])
 
 scatter!(ax, d4this.total, d4this.avg_d,alpha=0.5,color=:lightskyblue1)
@@ -59,3 +59,4 @@ ax.title = "Homers Hit vs How Much It Helped Since 2019"
 
 save("HomersWinExp.png",fig,px_per_unit=5)
 fig
+##
